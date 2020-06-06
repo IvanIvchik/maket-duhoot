@@ -1,1 +1,492 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUHOOT</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav id="top-menu">
+            <div id="none">
+            </div>
+            <div id="mainTop-menu">
+                <img src="picture/logo.jpg" alt="logo">
+                <ul>
+                    <li><a href="#">reality</a></li>
+                    <li><a href="#">living</a></li>
+                    <li><a href="#">education</a></li>
+                    <li><a href="#">entertainment</a></li>
+                    <li><a href="#">mobility</a></li>
+                </ul>
+                <div id="searchTop-menu">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+            <div id="login">
+                <a href="#"><i class="fas fa-user"></i>login</a>
+            </div>
+        </nav>
+
+        <div id="search">
+            <div id="searchMenu">
+                <h1>What are you looking for?</h1>
+                <form action="#">
+                    <div class="formSearchMenu" id="place">
+
+                        <select name="place" Dubai>
+                            <option value="Dudai">Dudai</option>
+                            <option value="Not Dubai">Not Dubai</option>
+                        </select>
+                    </div>
+                    <div class="formSearchMenu" id="category">
+                        <select name="category" Education>
+                            <option value="Education">Education</option>
+                            <option value="Not education">Not education</option>
+                        </select>
+                    </div>
+                    <div class="formSearchMenu" id="lineSearch">
+                        <input type="text" placeholder="Keyword, name, date,...">
+                    </div>
+                    <div id="buttonSearch">
+                        <input type="submit" value="search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav id="filter">
+            <div id="contentFilter">
+                <ul>
+                    <li><a href="#">recommended</a></li>
+                    <li><a href="#">latest</a></li>
+                    <li><a href="#">highlight</a></li>
+                </ul>
+                <div id="buttonFilter">
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="#">dubai <i class="fas fa-sort-down"></i></a></button>
+                        <div class="dropdown-content">
+                            <a href="#">dubai</a>
+                            <a href="#">not dubai</a>
+                            <a href="#">not dubai</a>
+                        </div>
+                    </div>
+                    <div id="hideMap" onclick="hideMap()">
+                        <p>hide map <i class="fas fa-map-marker-alt"></i></p>
+                    </div>
+
+                    <div id="showMap" onclick="showMap()">
+                        <p>show map <i class="fas fa-map-marker-alt"></i></p>
+                    </div>
+                </div>
+                <div id="filters">
+                    <h1>filter :</h1>
+
+                    <div class="house"><img src="picture/house.png" alt="house"></div>
+                    <div class="women"><img src="picture/women.png" alt="women"></div>
+                    <div class="education"><img src="picture/education.png" alt="education"></div>
+                    <div class="music"><img src="picture/note.png" alt="note"></div>
+                    <div class="transport"><img src="picture/transport.png" alt="transport"></div>
+
+                </div>
+            </div>
+        </nav>
+
+        <article id="post">
+            <section class="apartments1">
+                <div class="price">
+                    <p>$ 2,990</p>
+                </div>
+                <div class="house"><img src="picture/house.png" alt="house"></div>
+                <h1>2 bedroom house for rent in<br>Dubai</h1>
+                <a href="#">vision agency</a>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(365)</p>
+                </div>
+            </section>
+
+            <section class="beachParty">
+                <div class="music"><img src="picture/note.png" alt="note"></div>
+                <h1>Beach party festival 2014</h1>
+                <a href="#">long beach</a>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>(1165)</p>
+                </div>
+            </section>
+
+            <section class="busTrans">
+                <div class="transport"><img src="picture/transport.png" alt="transport"></div>
+                <div class="containerForm">
+                    <div class="formTransport">
+
+                        <div class="searchFormTransport" autofocus>
+                            <p class="textSearchTrans"><i class="fas fa-search"></i>show more</p>
+                            <form action="#">
+                                <input class="searchTrans" type="text">
+                            </form>
+                        </div>
+
+                        <div class="bottomFormRating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="dialogueFormTransport">
+                            <i class="far fa-comments"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomBusTrans">
+                    <h1>Aliquam quis pulvinar<br>purus</h1>
+                    <a href="#">bus trans</a>
+                    <div class="starsRating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p>(365)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="apartments2">
+                <div class="price">
+                    <p>$ 2,990</p>
+                </div>
+                <div class="house"><img src="picture/house.png" alt="house"></div>
+                <h1>4 bedroom house for<br> rent in Dubai</h1>
+                <a href="#">vision agency</a>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(165)</p>
+                </div>
+            </section>
+
+            <section class="apartments3">
+                <div class="house"><img src="picture/house.png" alt="house"></div>
+                <h1>vision agency</h1>
+                <div id="apartments3Rating" class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(365)</p>
+                </div>
+                <div class="commentRatting">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="avatarComment">
+                    <img src="picture/p1.png" alt="user">
+                </div>
+                <h2>lucy-p</h2>
+                <p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<a href="#">...red more.</a></p>
+            </section>
+
+            <section class="club">
+                <div class="houseGold"><img src="picture/house.png" alt="house"></div>
+                <h1>skybox club</h1>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>(1365)</p>
+                </div>
+                <div class="commentRatting">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="avatarComment">
+                    <img src="picture/p2.png" alt="user">
+                </div>
+                <h2>peter135</h2>
+                <p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<a href="#">...red more.</a></p>
+            </section>
+
+            <section class="apartments1">
+                <div class="price">
+                    <p>$ 2,990</p>
+                </div>
+                <div class="house"><img src="picture/house.png" alt="house"></div>
+                <h1>2 bedroom house for rent in<br>Dubai</h1>
+                <a href="#">vision agency</a>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(365)</p>
+                </div>
+            </section>
+
+            <section class="beachParty">
+                <div class="music"><img src="picture/note.png" alt="note"></div>
+                <h1>Beach party festival 2014</h1>
+                <a href="#">long beach</a>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>(1165)</p>
+                </div>
+            </section>
+
+            <section class="busTrans">
+                <div class="transport"><img src="picture/transport.png" alt="transport"></div>
+                <div class="containerForm">
+                    <div class="formTransport">
+
+                        <div class="searchFormTransport">
+                            <p class="textSearchTrans"><i class="fas fa-search"></i>show more</p>
+                            <form action="#">
+                                <input class="searchTrans" type="text">
+                            </form>
+                        </div>
+
+                        <div class="bottomFormRating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="dialogueFormTransport">
+                            <i class="far fa-comments"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomBusTrans">
+                    <h1>Aliquam quis pulvinar<br>purus</h1>
+                    <a href="#">bus trans</a>
+                    <div class="starsRating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p>(365)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="apartments2">
+                <div class="price">
+                    <p>$ 2,990</p>
+                </div>
+                <div class="house"><img src="picture/house.png" alt="house"></div>
+                <h1>4 bedroom house for<br> rent in Dubai</h1>
+                <a href="#">vision agency</a>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(165)</p>
+                </div>
+            </section>
+
+            <section id="leftColumn" class="club">
+                <div class="houseGold"><img src="picture/house.png" alt="house"></div>
+                <h1>skybox club</h1>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>(1365)</p>
+                </div>
+                <div class="commentRatting">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="avatarComment">
+                    <img src="picture/p2.png" alt="user">
+                </div>
+                <h2>peter135</h2>
+                <p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<a href="#">...red more.</a></p>
+            </section>
+
+            <section class="apartments1">
+                <div class="price">
+                    <p>$ 2,990</p>
+                </div>
+                <div class="house"><img src="picture/house.png" alt="house"></div>
+                <h1>2 bedroom house for rent in<br>Dubai</h1>
+                <a href="#">vision agency</a>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(365)</p>
+                </div>
+            </section>
+
+            <section class="beachParty">
+                <div class="music"><img src="picture/note.png" alt="note"></div>
+                <h1>Beach party festival 2014</h1>
+                <a href="#">long beach</a>
+                <div class="starsRating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>(1165)</p>
+                </div>
+            </section>
+
+        </article>
+
+        <div id="loadMore">
+            <a href="#">Load more<i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div id="offer">
+            <div id="contentsOffer">
+                <h1>What can DuHoot offer to you?</h1>
+                <p>Etiam cursus ipsum quis enim faucibus</p>
+            </div>
+            <div id="iconsOffer">
+                <div id="houseOffer" class="iconOffer">
+                    <img src="picture/house2.png" alt="house">
+                </div>
+                <div class="hr">
+                    <hr>
+                </div>
+
+                <div class="iconOffer">
+                    <img src="picture/women2.png" alt="women">
+                </div>
+                <div class="hr">
+                    <hr>
+                </div>
+                <div class="iconOffer">
+                    <img src="picture/education2.png" alt="education">
+                </div>
+                <div class="hr">
+
+                    <hr>
+                </div>
+                <div class="iconOffer">
+                    <img src="picture/note2.png" alt="note">
+                </div>
+                <div class="hr">
+                    <hr>
+                </div>
+                <div class="iconOffer">
+                    <img src="picture/transport2.png" alt="transport">
+                </div>
+            </div>
+            <h2>Reality</h2>
+            <div id="leftColumnOffer">
+                <div>
+                    <img src="picture/lightning.png" alt="lightning">
+                </div>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </div>
+            <div id="rightColumnOffer">
+                <div>
+                    <img src="picture/leaf.png" alt="leaf">
+                </div>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="contentFooter">
+            <div id="topFooter">
+                <h1>Subscribe to our newsletter</h1>
+                <div id="emailForm">
+                    <form action="#">
+                        <div><i class="far fa-envelope"></i></div>
+                        <div id="emailInput"><input type="text" placeholder="your@mail.com"></div>
+                        <div id="buttonInput"><input type="submit" value="subscribe"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="columnFooter" id="leftColumnFooter">
+                <a href="#">
+                        Ipsum quis
+                    </a>
+                <p>Aliquam quis</p>
+                <p>Pulvinar purus</p>
+                <p>Etiam cursus</p>
+                <p>Ipsum quis</p>
+                <p>Enim faucibuse</p>
+            </div>
+            <div class="columnFooter" id="centerColumnFooter">
+                <a href="#">
+                        Ipsum quis
+                    </a>
+                <p>Aliquam q1uis</p>
+                <p>Pulvinar purus</p>
+                <p>Etiam cursus</p>
+                <p>Ipsum quis</p>
+                <p>Enim faucibuse</p>
+            </div>
+            <div class="columnFooter" id="rightColumnFooter">
+                <a href="#">
+                        Follow us
+                    </a>
+                <div id="socialNetworks">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <p>Copyright © All Right reserved</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
