@@ -129,6 +129,7 @@ a {
 #search {
     height: 430px;
     background: url(picture/background.jpg) no-repeat;
+    background-size: cover;
     z-index: 4;
     padding-top: 75px;
 }
@@ -1051,6 +1052,8 @@ main {
 footer {
     height: 500px;
     background-image: url(picture/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #contentFooter {
