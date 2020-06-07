@@ -459,7 +459,7 @@ main {
 #post {
     display: grid;
     justify-items: center;
-    width: 940px;
+    width: 950px;
     padding-top: 45px;
     margin: auto;
     grid-template-rows: repeat(4, 265px);
